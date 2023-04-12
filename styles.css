@@ -10,7 +10,6 @@ body {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #91faf3, #d1b7e1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,12 +24,28 @@ body {
     padding: 2rem;
     border-radius: 5px;
 }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.3rem;
+  }
+  
+
+.logo {
+    max-width: 50px;
+    height: auto;
+    margin-right: 1rem;
+}
   
 h1.company-name {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-  
+
 .short-description {
     margin-bottom: 1rem;
 }
@@ -55,14 +70,13 @@ a.github-link {
 a.github-link i {
     font-size: 1.5rem;
 }
-
-a.email-link:hover i,
-a.github-link:hover i {
-    color: #fff;
-  }
   
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 600px) {
+    .logo {
+        max-width: 35px;
+    }
+    
     h1.company-name {
       font-size: 1.5rem;
     }
